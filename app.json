@@ -1,0 +1,31 @@
+{
+  "pages":[
+    "pages/search/search",
+    "pages/record/record"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "快件在哪儿",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color":"bfbfbf" ,
+    "selectedColor":"f4ea2a",
+    "backgroundColor":"white",
+        "list": [
+          {
+            "pagePath": "pages/search/search",
+            "text": "查找",
+            "iconPath": "./img/search.png",
+            "selectedIconPath": "./img/search_sel.png"
+          },
+          {
+            "pagePath": "pages/record/record",
+            "text": "记录",
+            "iconPath": "./img/record.png",
+            "selectedIconPath": "./img/record_sel.png"
+          }
+        ]
+  }
+}

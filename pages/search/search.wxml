@@ -1,0 +1,36 @@
+
+<view class='content'>
+<view class='box change' id='{{bt=="查询"?"H":"h"}}'>
+  <picker mode='selector' range='{{companys}}' range-key='com' bindchange='selectCompany' value='{{index}}'>
+      <view class='companys'>
+    <text class='company'>
+    <text wx:if='{{company&&companyVlue}}' >您已选择 : </text>
+    <text class='isSelect'>{{company}}</text>
+    </text>
+     </view>
+  </picker>
+
+  <view class='inputArea'  wx:if='{{company&&companyVlue}}'>
+  <view class='msg'>请在下面输入框输入快递单号</view>
+  <input type='text' focus='true' bindinput='inputNumber' value='{{orderNumber}}'></input>
+  </view>
+</view>
+
+<view class='inputArea'  wx:if='{{company}}'>
+<button type='default' bindtap='click'>{{bt}}</button>
+</view>
+<scroll-view  scroll-y='true'wx:if='{{list.length}}' class='change' id='{{list.length?"show":"hide"}}' >
+<view class='scrollBox' >
+    <view wx:for='{{list}}' wx:key="{{index}}" class='item'>
+      <view class='context'>{{item.remark}}</view>
+      <view class='time'>{{item.datetime}}</view>
+    </view>
+</view>
+</scroll-view>
+<view class='msgbox' wx:if='{{!list.length}}'>
+<image src='../../img/img1.jpg' wx:if='{{error}}'></image>
+<view class='msg' wx:if='{{!company}}'>开始查找快递吧!</view>
+<view class='msg normal' wx:if='{{error}}'>{{msg}}</view>
+</view>
+</view>
+ 

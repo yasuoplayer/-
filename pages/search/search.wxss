@@ -1,0 +1,173 @@
+page{
+  height: 100%;
+  width: 100%;
+  color: #333;
+  font-weight: bold
+}
+.content{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-top:4rpx solid #333;
+  display: flex;
+  flex-direction: column
+}
+.companys
+{
+  text-align: center;
+}
+
+.company
+{
+  display: inline-block;
+  height: 40rpx;
+  padding: 10% 10%;
+  line-height: 40rpx;
+}
+
+.isSelect{
+  color: #333;
+  padding-bottom: 10rpx;
+  border-bottom: 2px #333 solid;
+  font-style:italic
+}
+
+.inputArea
+{
+  padding: 10rpx 15%;
+}
+
+input
+{
+  border: 1rpx solid #ccc;
+  margin: 20rpx 0;
+  text-indent: 4px;
+}
+
+scroll-view
+{
+  flex: 1;
+  overflow: hidden
+}
+
+.scrollBox
+{
+  padding: 30rpx 10% 0 10%
+}
+
+.item
+{
+  padding: 10rpx 0;
+ 
+}
+.item>view
+{
+  padding-top: 10rpx;
+}
+
+.context
+{
+  font-size: 30rpx;
+  color: #333;
+  
+}
+
+.time
+{
+  font-size: 24rpx;
+  color: #c6c5c4;
+  text-align: right
+}
+
+.box{
+  height: 180px;
+  overflow: hidden;
+}
+
+image{
+  height: 150px;
+  width: 200px;
+  margin: 60rpx auto;
+  display: block
+}
+
+.msg{
+  text-align: center;
+  display: block;
+  margin:auto 0;
+}
+
+.change{
+  animation-duration:1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-direction:normal;
+   animation-fill-mode: forwards;
+}
+
+#H{
+  animation-name: Height
+}
+
+#h{
+  animation-name: height
+}
+
+
+#show{
+  animation-name: show
+}
+
+#hide{
+  animation-name: hide
+}
+
+
+button
+{
+  color: #fff
+}
+.normal
+{
+  font-weight: normal
+}
+@keyframes Height
+{
+  0%{
+    height: 0
+  }
+  100%{
+    height: 180px
+  }
+}
+
+@keyframes height
+{
+  0%{
+    height: 180px
+  }
+  100%{
+    height: 0
+  }
+}
+
+@keyframes show
+{
+  0%{
+    opacity: 0
+  }
+  100%{
+    opacity: 1
+  }
+}
+
+
+@keyframes hide
+{
+  0%{
+    opacity: 1
+  }
+  100%{
+    opacity: 0
+  }
+}
